@@ -31,19 +31,21 @@ class RowOrColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
       child: Row(
-        children: [
-          Image.asset('images/mangoes.jpg',
-          height:100,
-          width:100),
-          Image.asset('images/heels.jpg',
-          height:100,
-          width:100),
-          Image.asset('images/books.jpg',
-          height:100,
-              width: 100,)
-        ]
-      ),
+          children: [
+            Image.asset('images/mangoes.jpg',
+            height:100,
+            width:100),
+            Image.asset('images/heels.jpg',
+            height:100,
+            width:100),
+            Image.asset('images/books.jpg',
+            height:100,
+                width: 100,)
+          ]
+        ),
     );
   }
 }
