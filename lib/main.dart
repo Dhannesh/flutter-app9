@@ -70,36 +70,48 @@ class RowOrColumn extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                    child: Image.asset(
-                      'images/books.jpg',
-                      fit: BoxFit.cover,
-                    )),
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                      child: Image.asset(
+                        'images/books.jpg',
+                        fit: BoxFit.cover,
+                      )),
+                ),
                 const SizedBox(
                   width: 30,
                 ),
-                Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                    child: Image.asset(
-                      'images/bananas.jpg',
-                      fit: BoxFit.cover,
-                    )),
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                      child: Image.asset(
+                        'images/bananas.jpg',
+                        fit: BoxFit.cover,
+                      )),
+                ),
                 const SizedBox(
                   width: 30,
                 ),
-                Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                    child: Image.asset(
-                      'images/shoes.jpeg',
-                      fit: BoxFit.cover,
-                    ))
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                      child: Image.asset(
+                        'images/shoes.jpeg',
+                        fit: BoxFit.cover,
+                      )),
+                )
               ],
             )
           ]),
