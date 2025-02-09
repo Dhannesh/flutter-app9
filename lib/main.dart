@@ -31,14 +31,9 @@ class RowOrColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      color:Colors.grey,
-      child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          // textDirection: TextDirection.ltr,
+
+      child: Column(
+
           children: [
             Image.asset('images/mangoes.jpg',
             height:100,
@@ -49,12 +44,12 @@ class RowOrColumn extends StatelessWidget {
             Image.asset('images/books.jpg',
             height:100,
                 width: 100,),
-            // Image.asset('images/bananas.jpg',
-            //   height:100,
-            //   width: 100,),
-            // Image.asset('images/hats.jpeg',
-            //   height:100,
-            //   width: 100,)
+            Image.asset('images/bananas.jpg',
+              height:100,
+              width: 100,),
+            Image.asset('images/hats.jpeg',
+              height:100,
+              width: 100,)
           ]
         ),
     );
