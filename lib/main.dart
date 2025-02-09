@@ -31,27 +31,70 @@ class RowOrColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-
+        child: Padding(
+      padding: const EdgeInsets.all(14.0),
       child: Column(
-          // Main axis is now called top t0 bottom
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Expanded(
-              flex: 1,
-              child: Image.asset('images/mangoes.jpg'),
-            ),
-            Expanded(flex: 2,
-              child: Image.asset('images/heels.jpg')),
-            Expanded(flex: 4,child: Image.asset('images/books.jpg')),
-            Expanded(flex: 6,
-                child: Image.asset('images/bananas.jpg')),
-            Expanded(flex: 8
-                ,child: Image.asset('images/hats.jpeg'))
-          ]
-        ),
-    );
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Container(
+                width: 300,
+                height: 300,
+                decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                child: Image.asset(
+                  'images/mangoes.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(
+                width: 60,
+              ),
+              Container(
+                  width: 300,
+                  height: 300,
+                  decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                  child: Image.asset(
+                    'images/heels.jpg',
+                    fit: BoxFit.cover,
+                  ))
+            ]),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                    child: Image.asset(
+                      'images/books.jpg',
+                      fit: BoxFit.cover,
+                    )),
+                const SizedBox(
+                  width: 30,
+                ),
+                Container(
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                    child: Image.asset(
+                      'images/bananas.jpg',
+                      fit: BoxFit.cover,
+                    )),
+                const SizedBox(
+                  width: 30,
+                ),
+                Container(
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                    child: Image.asset(
+                      'images/shoes.jpeg',
+                      fit: BoxFit.cover,
+                    ))
+              ],
+            )
+          ]),
+    ));
   }
 }
