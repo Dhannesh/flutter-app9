@@ -11,3 +11,17 @@ assets:
 - images/
 
 row widget by default not wrap
+## Row widget main axis alignment
+mainAxisAlignment: MainAxisAlignment.center,
+mainAxisAlignment: MainAxisAlignment.center,
+mainAxisAlignment: MainAxisAlignment.end,
+mainAxisAlignment: MainAxisAlignment.spaceBetween,
+mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+## Row Widget Cross Axis alignment
+crossAxisAlignment: CrossAxisAlignment.center,
+
+## Text Direction Alignment - move alignment of children as in flexbox
+textDirection: TextDirection.rtl,
+
+
