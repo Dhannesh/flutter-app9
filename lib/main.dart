@@ -38,26 +38,34 @@ class RowOrColumn extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-              Container(
-                width: 300,
-                height: 300,
-                decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                child: Image.asset(
-                  'images/mangoes.jpg',
-                  fit: BoxFit.cover,
+              Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: Container(
+                  width: 300,
+                  height: 300,
+                  decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                  child: Image.asset(
+                    'images/mangoes.jpg',
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               const SizedBox(
                 width: 60,
               ),
-              Container(
-                  width: 300,
-                  height: 300,
-                  decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                  child: Image.asset(
-                    'images/heels.jpg',
-                    fit: BoxFit.cover,
-                  ))
+              Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                    child: Image.asset(
+                      'images/heels.jpg',
+                      fit: BoxFit.cover,
+                    )),
+              )
             ]),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
