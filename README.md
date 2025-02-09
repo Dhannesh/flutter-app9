@@ -31,3 +31,7 @@ verticalDirection : for cross axis
 ## cross axis and main axis alignment will work only if we set
 width: MediaQuery.of(context).size.width,
 height: MediaQuery.of(context).size.height,
+
+
+## height and width of widget
+it can managed by expanded widget, automatically fixed the height and width of widget
