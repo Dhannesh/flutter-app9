@@ -31,9 +31,13 @@ class RowOrColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
 
       child: Column(
-
+          // Main axis is now called top t0 bottom
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset('images/mangoes.jpg',
             height:100,

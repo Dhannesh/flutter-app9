@@ -10,6 +10,9 @@ create a folder named images parallel to lib folder
 assets:
 - images/
 
+row and column widget is bydefault fixed sized
+we can make view scroabble to maintain the widget
+
 row widget by default not wrap
 ## Row widget main axis alignment
 mainAxisAlignment: MainAxisAlignment.center,
@@ -22,6 +25,9 @@ mainAxisAlignment: MainAxisAlignment.spaceAround,
 crossAxisAlignment: CrossAxisAlignment.center,
 
 ## Text Direction Alignment - move alignment of children as in flexbox
-textDirection: TextDirection.rtl,
+textDirection: TextDirection.rtl for main axis
+verticalDirection : for cross axis
 
-
+## cross axis and main axis alignment will work only if we set
+width: MediaQuery.of(context).size.width,
+height: MediaQuery.of(context).size.height,
