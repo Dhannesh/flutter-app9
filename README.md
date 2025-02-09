@@ -35,3 +35,7 @@ height: MediaQuery.of(context).size.height,
 
 ## height and width of widget
 it can managed by expanded widget, automatically fixed the height and width of widget
+single expanded widget along widget with height and width will take all available screen
+
+## size of widget with flex
+flex can automatically relate the height of widht of widget with flex : 1,2,4,6,8 ...

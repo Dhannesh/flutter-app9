@@ -39,11 +39,17 @@ class RowOrColumn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Expanded(child: Image.asset('images/mangoes.jpg')),
-            Expanded(child: Image.asset('images/heels.jpg')),
-            Expanded(child: Image.asset('images/books.jpg')),
-            Expanded(child: Image.asset('images/bananas.jpg')),
-            Expanded(child: Image.asset('images/hats.jpeg'))
+            Expanded(
+              flex: 1,
+              child: Image.asset('images/mangoes.jpg'),
+            ),
+            Expanded(flex: 2,
+              child: Image.asset('images/heels.jpg')),
+            Expanded(flex: 4,child: Image.asset('images/books.jpg')),
+            Expanded(flex: 6,
+                child: Image.asset('images/bananas.jpg')),
+            Expanded(flex: 8
+                ,child: Image.asset('images/hats.jpeg'))
           ]
         ),
     );
