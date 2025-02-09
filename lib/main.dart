@@ -33,6 +33,7 @@ class RowOrColumn extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
+      color:Colors.grey,
       child: Row(
           children: [
             Image.asset('images/mangoes.jpg',
@@ -43,7 +44,13 @@ class RowOrColumn extends StatelessWidget {
             width:100),
             Image.asset('images/books.jpg',
             height:100,
-                width: 100,)
+                width: 100,),
+            Image.asset('images/bananas.jpg',
+              height:100,
+              width: 100,),
+            Image.asset('images/hats.jpg',
+              height:100,
+              width: 100,)
           ]
         ),
     );

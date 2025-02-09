@@ -10,3 +10,4 @@ create a folder named images parallel to lib folder
 assets:
 - images/
 
+row widget by default not wrap
