@@ -33,88 +33,96 @@ class RowOrColumn extends StatelessWidget {
     return Container(
         child: Padding(
       padding: const EdgeInsets.all(14.0),
-      child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: Container(
-                  width: 300,
-                  height: 300,
-                  decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                  child: Image.asset(
-                    'images/mangoes.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 60,
-              ),
-              Flexible(
-                flex: 1,
-                fit: FlexFit.tight,
-                child: Container(
+      child: Flexible(
+        flex: 1,
+        fit: FlexFit.tight,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Container(
                     width: 300,
                     height: 300,
                     decoration: BoxDecoration(border: Border.all(width: 3.0)),
                     child: Image.asset(
-                      'images/heels.jpg',
+                      'images/mangoes.jpg',
                       fit: BoxFit.cover,
-                    )),
-              )
-            ]),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Flexible(
-                  flex: 1,
-                  fit: FlexFit.tight,
-                  child: Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                      child: Image.asset(
-                        'images/books.jpg',
-                        fit: BoxFit.cover,
-                      )),
+                    ),
+                  ),
                 ),
                 const SizedBox(
-                  width: 30,
+                  width: 60,
                 ),
                 Flexible(
                   flex: 1,
                   fit: FlexFit.tight,
                   child: Container(
-                      width: 200,
-                      height: 200,
+                      width: 300,
+                      height: 300,
                       decoration: BoxDecoration(border: Border.all(width: 3.0)),
                       child: Image.asset(
-                        'images/bananas.jpg',
-                        fit: BoxFit.cover,
-                      )),
-                ),
-                const SizedBox(
-                  width: 30,
-                ),
-                Flexible(
-                  flex: 1,
-                  fit: FlexFit.tight,
-                  child: Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(border: Border.all(width: 3.0)),
-                      child: Image.asset(
-                        'images/shoes.jpeg',
+                        'images/heels.jpg',
                         fit: BoxFit.cover,
                       )),
                 )
-              ],
-            )
-          ]),
+              ]),
+              Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                          child: Image.asset(
+                            'images/books.jpg',
+                            fit: BoxFit.cover,
+                          )),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                          child: Image.asset(
+                            'images/bananas.jpg',
+                            fit: BoxFit.cover,
+                          )),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(border: Border.all(width: 3.0)),
+                          child: Image.asset(
+                            'images/shoes.jpeg',
+                            fit: BoxFit.cover,
+                          )),
+                    )
+                  ],
+                ),
+              )
+            ]),
+      ),
     ));
   }
 }
